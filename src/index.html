@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Portpholio</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/slider.js"></script>
 </head>
 <body>
     <header class="main_header">
@@ -27,11 +28,34 @@
     </header>
 
     <main class="main_content">
-        <div class = "slider"><img class="slide_img" src="../img/8842c2e0-fa38-11e9-8c28-e9e2c5a778cf_large.jpg"></div>
+        <div class="slider_wrapper">
+            <a id="prev"><img src="../img/slides/slides_prev.png" width="40px" alt="prev"></a>
+          
+            <div class="myslide">
+              <div><img src="../img/slides/1.jpg"></div>
+            </div>
+            <div class="myslide">
+                <div><img src="../img/slides/2.jpg"></div>
+              </div>
+            <div class="myslide">
+                <div><img src="../img/slides/3.jpg"></div>
+              </div>
+           
+           
+
+            <a id="next"><img src="../img/slides/slides_next.png" width="40px" alt="next"></a>
+        </div>          
     </main>
 
     <footer class="footer">
-        <div class="contacts"></div>
+        <div class="contacts">
+            
+            <ul class="social-list">
+                <li class="social-item"><a href="#0" class="social-icon social-wa"></a> <span class="form-hint">Написать WA</span> </li>
+                <li class="social-item"><a href="#0" class="social-icon social-tele"></a> <span class="form-hint">Написать в Telegramm</span> </li>
+             </ul>
+        </div>
+        <div class = "info">Фотограф Марина Анисимова </div>
     </footer>
 </body>
 </html>
