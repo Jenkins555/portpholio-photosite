@@ -2,131 +2,266 @@ body {
     font-family: Montserrat, sans-serif;
     font-weight: normal;
     margin: 0;
-	padding: 0;
+    padding: 0;
     background-color: #FFFAFA;
     background-image: url(../img/background/13.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
+
 
 .header {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 100%;
 }
 
 .logo {
-    width:30%;
+    width: 30%;
     padding: 1%;
 }
 
-.nav {
-   width: 100%;
+
+
+
+.logo_bur_menu {
+    display: none;
 }
 
-.nav  ul {
+.nav {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+
+    .logo_bur_menu {
+        display: flex;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: baseline;
+
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo_bur_menu {
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+    .active_burg_menu {}
+}
+
+@media (max-width: 600px) {
+    .logo {
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1%;
+    }
+    .menu {
+        display:flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .logo_bur_menu {
+        display: flex;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo_bur_menu {
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+    .active_burg_menu {}
+}
+
+.nav ul {
     display: flex;
     list-style-type: none;
 }
-.nav  ul  li {
+
+.nav ul li {
     margin: 5px 10px;
 }
 
 .main-hover {
     text-transform: uppercase;
     text-decoration: none;
-    
+
     color: #070707;
     opacity: 0.8;
     font-weight: 400;
     text-shadow: none;
 }
 
-.main-hover:hover{
+.main-hover:hover {
     text-decoration: underline 2px;
     color: #696969;
 }
-    
+
 .main_content {
     width: 100%;
     margin: auto;
-    margin-top:2%;
+    margin-top: 2%;
+
+}
+
+@media (max-width: 1000px) {
+    .main_content {
+        width: 100%;
+        margin: auto;
+       
+}
+}
+
+@media (max-width: 600px) {
+    .main_content {      
+        margin-top:-13%;
+       
+       
+}
+}
+
+
+
+.main_content::before {
+    content: "";
+    display: block;
+    position: relative;
+    /* включаем асболютное позиционирование */
+    bottom: 15px;
+    /*отступ будет 0 пикселей от верхней точки блока */
+    width: 80%;
+    /* блок займёт по ширине 100% ширины родительского */
+    height: 1px;
+    /* высота самого блока */
+    background: #696969;
+    /* задаём нужный цвет фоном */
+    opacity: 0.5;
+    margin: auto;
+}
+
+.main_content::after {
+    content: "";
+    display: block;
+    position: relative;
+    /* включаем асболютное позиционирование */
+    bottom: 510px;
+    /*отступ будет 0 пикселей от верхней точки блока */
+    width: 80%;
+    /* блок займёт по ширине 100% ширины родительского */
+    height: 1px;
+    /* высота самого блока */
+    background: #696969;
+    /* задаём нужный цвет фоном */
+    opacity: 0.5;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .main_content::before {      
+        display: none;     
+    }
     
+    .main_content::after {  
+        display: none;
+    }
 }
-   
-.main_content::before{
-    content: ""; 
-    display: block; 
-    position: relative; /* включаем асболютное позиционирование */
-    bottom: 15px; /*отступ будет 0 пикселей от верхней точки блока */
-    width: 80%; /* блок займёт по ширине 100% ширины родительского */
-    height: 1px; /* высота самого блока */
-    background: #696969; /* задаём нужный цвет фоном */
-    opacity: 0.5;
-    margin:auto;
-}
-
-.main_content::after{
-    content: ""; 
-    display: block; 
-    position: relative; /* включаем асболютное позиционирование */
-    bottom: 510px; /*отступ будет 0 пикселей от верхней точки блока */
-    width: 80%; /* блок займёт по ширине 100% ширины родительского */
-    height: 1px; /* высота самого блока */
-    background: #696969; /* задаём нужный цвет фоном */
-    opacity: 0.5;
-    margin:auto;
-}
-
-
 
 
 .slider_wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 500px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin:  auto;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-.myslide {
- flex-wrap: nowrap;
-  justify-content: center;
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 0.95;
-  height: 100%;
-  width: 1000px;
-  
-  }
 
-  .myslide__active {
+.myslide {
+    flex-wrap: nowrap;
+    justify-content: center;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.95;
+    height: 100%;
+    width: 1000px;
+
+}
+
+@media (max-width: 1000px) {
+    .myslide {
+    height: 80%;
+    width: 80%;
+    }
+}
+
+.myslide__active {
     transition-timing-function: linear;
     display: flex;
-    
-  }
 
-  .myslide img {
+}
+
+.myslide img {
     width: 1000px;
     height: 500px;
-    
-    
-  }
-  .slider_wrapper a {
+}
+@media (max-width: 1000px) {
+    .myslide img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.slider_wrapper a {
     cursor: pointer;
-  }
+}
 
 .footer {
     margin-top: 3%;
 }
 
+@media  (max-width: 1000px) {
+    .footer {
+        margin-top: 0;
+    }
+}
+
+@media  (max-width: 600px) {
+    .footer {
+        margin-top: 0;
+    }
+}
 .social-list {
-    display:flex;
+    display: flex;
     justify-content: center;
     list-style-type: none;
 }
@@ -135,35 +270,35 @@ body {
     display: block;
     width: 40px;
     height: 40px;
-   
+
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: center;
-  }
+}
 
-  
-  
-  .social-wa {
+
+
+.social-wa {
     background-image: url(../img/whatsapp\ \(1\).png);
-  }
-  
-  
-  .social-tele {
+}
+
+
+.social-tele {
     background-image: url(../img/telegramm.png);
-  }
+}
 
-  .form-hint {
-      display: none;
-  }
+.form-hint {
+    display: none;
+}
 
-  .social-item:first-child {
-    margin-right:3%;
-  }
+.social-item:first-child {
+    margin-right: 3%;
+}
 
-  .info {
+.info {
     text-align: center;
     font-size: 14px;
-    
-    
+
+
     margin-left: 5%;
-  }
+}
