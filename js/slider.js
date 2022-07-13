@@ -56,4 +56,24 @@ let timer = setInterval(function() {
   showSlides(slideIndex);
 }, 5000);
 
+/// Бургер меню
+
+let burger = document.querySelector('#nav-icon6');
+burger.addEventListener('click', function () {
+  burger.classList.toggle('open');
+  let menuMobile = document.querySelector('.wrapper_menu');
+  let logo = document.querySelector('.logo')
+  menuMobile.classList.toggle('wrapper_menu_open');
+  logo.classList.toggle('logo_swap');
+  
+})
+
+/// Открытие меню
+ 
+
 };
+
+
+
+
+
