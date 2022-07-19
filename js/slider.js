@@ -68,7 +68,7 @@ burger.addEventListener('click', function () {
   
 })
 
-/// Открытие меню
+
  
 
 };

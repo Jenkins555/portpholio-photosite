@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Portpholio</title>
     <link rel="stylesheet" href="../css/style.css">
-   <script src="../js/slider.js"></script>
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.maskedinput.js"></script>
+    <script type="text/javascript">
+    jQuery(function($){$("#phone").mask("+7 (999) 999-9999");$("#phone2").mask("+7 (999) 999-9999");});
+    </script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+   
    
 </head>
 <body>
@@ -59,23 +67,16 @@
     </header>
 
     <main class="main_content">
-        <div class="slider_wrapper">
-            <a id="prev"><img src="../img/slides/slides_prev.png" width="40px" alt="prev"></a>
-          
-            <div class="myslide">
-              <div><img src="../img/slides/1.jpg"></div>
-            </div>
-            <div class="myslide">
-                <div><img src="../img/slides/2.jpg"></div>
-              </div>
-            <div class="myslide">
-                <div><img src="../img/slides/3.jpg"></div>
-              </div>
-           
-           
-
-            <a id="next"><img src="../img/slides/slides_next.png" width="40px" alt="next"></a>
-        </div> 
+       
+        <div id="inline">
+            <h2>Форма обратной связи</h2>
+            <p>Если у Вас остались вопросы, просто напишите мне.</p>
+            <form id="contact" action="#" method="post" name="contact">
+            <input id="name" class="txt" name="name" type="name" placeholder="Ваше имя">
+            <input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон"> 
+            <input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail"> 
+            <textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea><button id="send">Отправить</button></form>
+        </div>
                  
     </main>
 
