@@ -108,6 +108,9 @@
       opacity: 0;
   }
 }
+.message {
+  
+}
 
 .phone-button {
   opacity: 0;
@@ -158,7 +161,15 @@
   }
 }
 
+@media (min-width: 1240px)  {
+  .whatsapp-button{
+    display:none;
+  }
+  .phone-button{
+    display:none;
+  }
 
+}
 
 .main_content_ph {
     display: flex;

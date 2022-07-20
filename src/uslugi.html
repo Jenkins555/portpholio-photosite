@@ -7,11 +7,18 @@
     <title>Photo Portpholio</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/uslugi.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.maskedinput.js"></script>
+    <script type="text/javascript">
+    jQuery(function($){$("#phone").mask("+7 (999) 999-9999");$("#phone2").mask("+7 (999) 999-9999");});
+    </script>
    <script src="../js/menu.js"></script>
    
 </head>
 <body>
     <span class="knopka"><a>Наверх</a></span>
+    <span class="absolute_message"></span>
     <a href="tel:+79161478920" target="_blank" rel="nofollow">
         <span class="phone-button"></span>
     </a>
@@ -63,7 +70,16 @@
 
     <main class="main_content_ph">
         
-    
+        <div id="inline">
+            <span id="close"></span>
+            <h2>Форма обратной связи</h2>
+            <p>Если у Вас остались вопросы, просто напишите мне.</p>
+            <form id="contact" action="#" method="post" name="contact">
+            <input id="name" class="txt" name="name" type="name" placeholder="Ваше имя">
+            <input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон"> 
+            <input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail"> 
+            <textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea><button id="send">Отправить</button></form>
+        </div>
    
          <div class="auto-grid">
             

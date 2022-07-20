@@ -157,7 +157,8 @@ background-image: url(../img/background/13.jpg);
 
     .menu {
         display:flex;
-        justify-content: center;
+        
+        justify-content: flex-start;
     }
 
     #nav-icon6 {
@@ -171,7 +172,6 @@ background-image: url(../img/background/13.jpg);
         display: flex;
         list-style-type: none;
     }
-    
 }
 
 .nav ul {
@@ -286,7 +286,6 @@ background-image: url(../img/background/13.jpg);
     opacity: 0.95;
     height: 100%;
     width: 1000px;
-
 }
 
 @media (max-width: 1000px) {
@@ -299,12 +298,12 @@ background-image: url(../img/background/13.jpg);
 .myslide__active {
     transition-timing-function: linear;
     display: flex;
-
 }
 
 .myslide img {
     width: 1000px;
     height: 500px;
+    
 }
 @media (max-width: 1000px) {
     .myslide img {
@@ -337,23 +336,18 @@ background-image: url(../img/background/13.jpg);
     justify-content: center;
     list-style-type: none;
 }
-
 .social-icon {
     display: block;
     width: 40px;
     height: 40px;
-
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: center;
 }
 
-
-
 .social-wa {
     background-image: url(../img/whatsapp\ \(1\).png);
 }
-
 
 .social-tele {
     background-image: url(../img/telegramm.png);
@@ -370,7 +364,5 @@ background-image: url(../img/background/13.jpg);
 .info {
     text-align: center;
     font-size: 14px;
-
-
     margin-left: 5%;
 }
