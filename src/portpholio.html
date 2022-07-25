@@ -1,126 +1,331 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Portpholio</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/portpholio.css">
-    <script src="../js/menu.js"></script>
-   
-   
-</head>
-<body>
-  
-    <span class="knopka"><a>Наверх</a></span>
-    <a href="../src/contacts.html" target="_blank" rel="nofollow">
-      <span class="message"></span>
-  </a>
 
-    <a href="tel:+79161478920" target="_blank" rel="nofollow">
-      <span class="phone-button"></span>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио фотографа</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/portpholio.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.maskedinput.js"></script>
+  <script type="text/javascript">
+    jQuery(function ($) { $("#phone").mask("+7 (999) 999-9999"); $("#phone2").mask("+7 (999) 999-9999"); });
+  </script>
+  <script src="../js/menu.js"></script>
+
+
+</head>
+
+<body>
+
+  <span class="knopka"><a>Наверх</a></span>
+  <span class="absolute_message"></span>
+
+
+  <a href="tel:+79161478920" target="_blank" rel="nofollow">
+    <span class="phone-button"></span>
   </a>
   <a href="https://api.whatsapp.com/send?phone=79161478920" target="_blank" rel="nofollow">
-      <span class="whatsapp-button"></span>
+    <span class="whatsapp-button"></span>
   </a>
-<!--  <a href="#0" target="_blank" rel="nofollow">
+  <!--  <a href="#0" target="_blank" rel="nofollow">
       <span class="telegram-button"></span>
   </a>-->
-    <div class = "wrapper_ph">
+  <div class="wrapper_ph">
     <header class="main_header">
-        <div class = "wrapper_menu">
-        <div class = "nav_wrapper_menu">
-            <ul>
-                <li><a class="main-hover-wr" href="../src/index.html">Главная</a></li>
-                 <li><a class="main-hover-wr" href="#">Обо мне</a></li>
-                 <li><a class="main-hover-wr" href="../src/portpholio.html">Портфолио</a></li>
-                 <li><a class="main-hover-wr" href="../src/uslugi.html">Услуги</a></li>
-                 <li><a class="main-hover-wr" href="../src/contacts.html">Контакты</a></li>
-            </ul>
+
+      <div class="header">
+        <div class="logo"><img src="../img/photologo.png"></div>
+        <div class="menu">
+          <div class="burger">
+            <div id="nav-icon6">
+              <span></span>
             </div>
+          </div>
         </div>
 
-        
-        <div class="header">
-            <div class="logo"><img src="../img/photologo.png"></div>
-            <div class="menu">
-               <div class = "burger">
-                    <div id="nav-icon6">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-                
-              <nav class = "nav"> 
-                    <ul >
-                        <li><a class="main-hover" href="../src/index.html">Главная</a></li>
-                         <li><a class="main-hover" href="#">Обо мне</a></li>
-                         <li><a class="main-hover" href="../src/portpholio.html">Портфолио</a></li>
-                         <li><a class="main-hover" href="../src/uslugi.html">Услуги</a></li>
-                         <li><a class="main-hover" href="../src/contacts.html">Контакты</a></li>
-                    </ul>
-             </nav>
-           
-        </div>
+        <nav class="nav">
+          <ul>
+            <li><a class="main-hover" href="../index.html">Главная</a></li>
+            <li><a class="main-hover" href="../src/aboutme.html">Обо мне</a></li>
+            <li><a class="main-hover" href="../src/portpholio.html">Портфолио</a></li>
+            <li><a class="main-hover" href="../src/uslugi.html">Услуги</a></li>
+            <li><a class="main-hover" href="../src/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+
+      </div>
     </header>
 
 
-    <main class="main_content_ph">       
-        <h1>Моё портфолио</h1>
-        <div class="grid-container">
-          <div>
-            <img class='grid-item grid-item-1' src='../img/buisness/port1.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-2' src='../img/buisness/port2.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-3' src='../img/buisness/predm1.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-4' src='../img/buisness/predm2.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-5' src='../img/buisness/predm3.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-6' src='../img/buisness/svadb1.jpeg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-7' src='../img/buisness/svadb2.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-8' src='../img/buisness/svadb3.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-9' src='../img/slides/1.jpg' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
-          <div>
-            <img class='grid-item grid-item-10' src='../img/slides/4.JPG' alt=''>
-            <p>"Подпись к фото"</p>
-          </div>
+    <main class="main_content_ph">
+      <div class="wrapper_menu">
+        <div class="nav_wrapper_menu">
+          <ul>
+            <li><a class="main-hover-wr" href="../index.html">Главная</a></li>
+            <li><a class="main-hover-wr" href="../src/aboutme.html">Обо мне</a></li>
+            <li><a class="main-hover-wr" href="../src/portpholio.html">Портфолио</a></li>
+            <li><a class="main-hover-wr" href="../src/uslugi.html">Услуги</a></li>
+            <li><a class="main-hover-wr" href="../src/contacts.html">Контакты</a></li>
+          </ul>
         </div>
+      </div>
+
+      <div id="inline">
+        <span id="close"></span>
+        <h2>Форма обратной связи</h2>
+        <p>Если у Вас остались вопросы, просто напишите мне.</p>
+        <form id="contact" action="#" method="post" name="contact">
+          <input id="name" class="txt" name="name" type="name" placeholder="Ваше имя">
+          <input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон">
+          <input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail">
+          <textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea><button
+            id="send">Отправить</button>
+        </form>
+        <script>
+
+          function validateEmail(email) {
+            var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return reg.test(email);
+          }
+          $(document).ready(function () {
+            $("#contact").submit(function () { return false; });
+            $("#send").on("click", function () {
+              var emailval = $("#email").val();
+              var namevl = $("#name").val();
+              var phonevl = $("#phone").val();
+              var msgval = $("#msg").val();
+              var msglen = msgval.length;
+              var mailvalid = validateEmail(emailval);
+              if (mailvalid == false) {
+                $("#email").addClass("error");
+              }
+              else if (mailvalid == true) {
+                $("#email").removeClass("error");
+              }
+              if (mailvalid == false) {
+                $("#name").addClass("error");
+              }
+              else if (mailvalid == true) {
+                $("#name").removeClass("error");
+              }
+              if (mailvalid == false) {
+                $("#phone").addClass("error");
+              }
+              else if (mailvalid == true) {
+                $("#phone").removeClass("error");
+              }
+              if (msglen < 4) {
+                $("#msg").addClass("error");
+              }
+              else if (msglen >= 4) {
+                $("#msg").removeClass("error");
+              }
+              if (mailvalid == true && msglen >= 4) {
+                // если обе проверки пройдены
+                // сначала мы скрываем кнопку отправки
+                $("#send").replaceWith("<em>отправка...</em>");
+                $.ajax({
+                  type: 'POST',
+                  url: 'sendmessage.php',
+                  data: $("#contact").serialize(),
+                  success: function (data) {
+                    if (data == "true") {
+                      $("#contact").fadeOut("fast", function () {
+                        $(this).before("<p><strong>Ваше сообщение отправлено</strong></p>");
+                        setTimeout("$.fancybox.close()", 1000);
+                      });
+                    }
+                  }
+                });
+              }
+            });
+          });
+        </script>
+      </div>
+      <h1>Здесь можно ознакомиться с моими работами</h1>
+      <div class="grid-container">
+        <div>
+          <img class='grid-item grid-item-1' src='../img/portpholio/1.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-2' src='../img/portpholio/2.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-3' src='../img/portpholio/3.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-4' src='../img/portpholio/4.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-6' src='../img/portpholio/6.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-8' src='../img/portpholio/8.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-9' src='../img/portpholio/9.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-10' src='../img/portpholio/10.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-11' src='../img/portpholio/11.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-12' src='../img/portpholio/12.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-13' src='../img/portpholio/13.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-14' src='../img/portpholio/14.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-15' src='../img/portpholio/15.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-16' src='../img/portpholio/16.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-17' src='../img/portpholio/17.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-18' src='../img/portpholio/18.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-19' src='../img/portpholio/19.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-20' src='../img/portpholio/20.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-21' src='../img/portpholio/21.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-22' src='../img/portpholio/22.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-23' src='../img/portpholio/23.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-24' src='../img/portpholio/24.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-25' src='../img/portpholio/25.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-26' src='../img/portpholio/26.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-27' src='../img/portpholio/27.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-28' src='../img/portpholio/28.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-29' src='../img/portpholio/29.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-30' src='../img/portpholio/30.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-31' src='../img/portpholio/31.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-32' src='../img/portpholio/32.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-33' src='../img/portpholio/33.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-34' src='../img/portpholio/34.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-35' src='../img/portpholio/35.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-36' src='../img/portpholio/36.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-37' src='../img/portpholio/37.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-38' src='../img/portpholio/38.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-39' src='../img/portpholio/39.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-40' src='../img/portpholio/40.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-41' src='../img/portpholio/41.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-42' src='../img/portpholio/42.jpg' alt='' oncontextmenu="return false;">
+          <p></p>
+        </div>
+
+      </div>
     </main>
     <footer class="footer">
-        <div class="contacts">
-            
-            <ul class="social-list">
-                <li class="social-item"><a href="#0" class="social-icon social-wa"></a> <span class="form-hint">Написать WA</span> </li>
-                <li class="social-item"><a href="#0" class="social-icon social-tele"></a> <span class="form-hint">Написать в Telegramm</span> </li>
-             </ul>
-        </div>
-        <div class = "info">Фотограф Марина Анисимова </div>
+      <div class="contacts">
+
+        <ul class="social-list">
+          <li class="social-item"><a href="https://api.whatsapp.com/send?phone=79161478920"
+              class="social-icon social-wa"></a> <span class="form-hint">Написать WA</span> </li>
+          <li class="social-item"><a href="tel:+79161478920" class="social-icon social-tele"></a> <span
+              class="form-hint">Написать в Telegramm</span> </li>
+        </ul>
+        <div class="info">Фотограф Марина Анисимова </div>
+      </div>
+
+
     </footer>
-</div>
+  </div>
 </body>
+
 </html>

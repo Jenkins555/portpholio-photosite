@@ -1,0 +1,31 @@
+.main_content {
+    text-align: center;
+}
+
+
+
+.grid-container {
+    display: flex;
+    line-height: 2;
+    align-items: flex-start;
+
+}
+
+.grid-container div {
+    background-color: aliceblue;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        flex-direction: column;
+
+    }
+}
+
+.grid-item-1 {
+    width: 60%;
+}
+
+.diploma {
+    width: 30%;
+}
