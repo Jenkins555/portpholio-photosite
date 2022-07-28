@@ -4,7 +4,6 @@ window.onload = function () {
 
   let slideIndex = 1;
   let slides = document.getElementsByClassName("myslide");
-  console.log(slides)
   showSlides(slideIndex);
 
   let prev = document.getElementById('prev');
@@ -64,6 +63,7 @@ window.onload = function () {
     let menuMobile = document.querySelector('.wrapper_menu');
     let logo = document.querySelector('.logo')
     menuMobile.classList.toggle('wrapper_menu_open');
+    document.querySelector('body').classList.toggle('body_overflow');
     logo.classList.toggle('logo_swap');
 
   })

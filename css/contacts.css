@@ -1,6 +1,8 @@
 /*
 Форма обратной связи
 */
+
+
 .main_content {
     margin-top: 3%;
 
@@ -72,7 +74,7 @@ textarea.error:focus {
     font-size: 1.2em;
     border: solid 1px #F9F9F9;
     border-radius: 2px;
-    background: #70C6B9;
+    background: #5394c0;
     width: 210px;
     margin-bottom: 20px;
 }

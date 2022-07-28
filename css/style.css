@@ -8,14 +8,15 @@ body {
 }
 
 h1 {
-text-align: center;
-font-size: 2em;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #0a0713, #88868a);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #0a0713, #88868a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
+
 h2 {
     text-align: center;
     font-size: 1.5em;
@@ -23,7 +24,7 @@ h2 {
     background-image: linear-gradient(to left, #0a0713, #88868a);
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text;  
+    -webkit-background-clip: text;
 }
 
 .body_overflow {
@@ -159,19 +160,18 @@ h2 {
     margin-top: 4%;
     left: 0;
 
+
 }
 
 .wrapper_menu_open {
     display: flex;
-
-
 }
 
 .nav_wrapper_menu ul {
     list-style-type: none;
 }
 
-.main-hover-wr {   
+.main-hover-wr {
     text-decoration: none;
     font-size: 3em;
     color: #ffffff;
@@ -331,6 +331,7 @@ h2 {
 
 .slider_wrapper {
     display: flex;
+    order: 2;
     flex-wrap: nowrap;
     height: 100%;
     width: 100%;
@@ -399,18 +400,57 @@ h2 {
 
 
 .aboutMe {
+    order: 1;
     text-align: center;
-    padding: 5%;
-    width: 90%;
+    text-indent: 30px;
+    margin: auto;
+    width: 100%;
     line-height: 2;
+
 }
 
 .aboutMe_text {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 18%;
+    padding-right: 18%;
+    font-size: 20px;
 }
 
+.aboutMe_text a {
+    text-decoration: none;
+}
 
+@media (max-width: 1200px) {
+    .aboutMe {}
+
+    .aboutMe_text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .aboutMe {
+        order: 2;
+    }
+
+    .aboutMe_text {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .slider_wrapper {
+        order: 1;
+    }
+
+    .wrapper {
+        background-image: url(../img/background/13\(mobile\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+
+    }
+}
 
 
 .contacts {

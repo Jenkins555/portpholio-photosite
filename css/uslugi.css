@@ -1,13 +1,6 @@
-body {
-  background-image: url(../img/background/back.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-style: italic;
-}
-
 .knopka {
   opacity: 0;
-  background-color: #3498db;
+  background-color: #5394c0;
   color: #fff;
   padding: 15px 30px;
   border-radius: 5px;
@@ -254,6 +247,10 @@ a {
   text-align: center;
 }
 
+.profile h2 {
+  color: white;
+}
+
 .profile::before,
 .profile::after {
   content: "";
@@ -380,6 +377,23 @@ a {
   padding: 7%;
 }
 
+@media (max-width: 800px) {
+  .info_about {
+    margin-top: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .info_about {
+    margin-top: 45%;
+  }
+
+  .content {
+    margin: auto;
+    width: 90%;
+  }
+}
+
 .content_ph {
   margin-top: 7%;
   display: flex;
@@ -426,7 +440,6 @@ a {
   width: 40%;
 }
 
-.content_ph_2 img {}
 
 .content_ph .img_ph img {
   width: 100%;
@@ -568,13 +581,12 @@ textarea.error:focus {
 
 #send {
   color: #FFFFFF;
-
   cursor: pointer;
   padding: 5px 11px;
   font-size: 1.2em;
   border: solid 1px #F9F9F9;
   border-radius: 2px;
-  background: #3498db;
+  background: #5394c0;
   width: 210px;
   margin-bottom: 20px;
 }

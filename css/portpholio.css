@@ -1,6 +1,6 @@
 .knopka {
   opacity: 1;
-  background-color: #3498db;
+  background-color: #5394c0;
   color: #fff;
   padding: 15px 30px;
   border-radius: 5px;
@@ -304,13 +304,12 @@ textarea.error:focus {
 
 #send {
   color: #FFFFFF;
-
   cursor: pointer;
   padding: 5px 11px;
   font-size: 1.2em;
   border: solid 1px #F9F9F9;
   border-radius: 2px;
-  background: #3498db;
+  background: #5394c0;
   width: 210px;
   margin-bottom: 20px;
 }

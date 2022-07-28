@@ -16,7 +16,12 @@ window.onload = function () {
   let inline = document.querySelector('#inline')
   let letter = document.querySelector('.absolute_message')
   let close = document.querySelector('#close')
+ 
+
+
   //
+  
+  
   function magic() {
     if (window.pageYOffset > 20) {
       btn.style.opacity = '1';
@@ -31,9 +36,9 @@ window.onload = function () {
     }
   }
   //
-  btn.onclick = function () {
+  btn.addEventListener('click',  function () {
     window.scrollTo(0, 0)
-  }
+  })
 
   letter.addEventListener('click', function () {
     inline.style.display = "block";
@@ -41,8 +46,7 @@ window.onload = function () {
   close.addEventListener('click', function () {
     inline.style.display = "none";
   })
+  
   // When scrolling, we run the function
   window.onscroll = magic
-
-
 }
